@@ -1,0 +1,1 @@
+select categories.category as category, avg(games.avgscore) as avg from categories natural join gamecat natural join games group by categories.category order by avg(games.avgscore) desc,categories.category limit 5;

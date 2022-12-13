@@ -1,0 +1,1 @@
+select max(avgscore),min(avgscore) from games;

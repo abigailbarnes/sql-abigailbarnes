@@ -1,0 +1,1 @@
+select name,LENGTH(name) as namelen from games where (games.minplayers = 3) and (games.maxplayers = 5) order by LENGTH(name) desc limit 10;

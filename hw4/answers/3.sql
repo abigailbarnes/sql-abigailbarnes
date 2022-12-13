@@ -1,0 +1,1 @@
+select count() as count from (select from business full join review on business.business_id = review.business_id) as a where review_id = null;

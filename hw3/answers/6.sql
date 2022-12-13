@@ -1,0 +1,1 @@
+SELECT MIN(CAST(minplaytime AS DECIMAL) / 60) AS minhours, MAX(CAST(maxplaytime AS DECIMAL) / 60) AS maxhours, minplayers, maxplayers FROM games GROUP BY minplayers, maxplayers ORDER BY minplayers, maxplayers;

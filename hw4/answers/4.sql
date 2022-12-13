@@ -1,0 +1,1 @@
+select users.user_id, count(review.review_id), review.business_id as count_review from review join users on users.user_id = review.review_id group by users.user_id;
